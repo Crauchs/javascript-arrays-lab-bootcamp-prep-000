@@ -8,4 +8,4 @@ function destructivelyRemoveFirstKitten() {kittens.shift(); return kittens}
 function appendKitten(name) {const moreKittens=[kittens, ...name]; return moreKittens}
 function prependKitten(name) {return [...name, kittens]}
 function removeLastKitten() {return [0, kittens.length-1]}
-function removeFirstKitten() {return}
+function removeFirstKitten() {return kittens.slice(1)}
